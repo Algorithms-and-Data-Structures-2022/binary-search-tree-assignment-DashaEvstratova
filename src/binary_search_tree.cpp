@@ -112,7 +112,18 @@ namespace assignment {
   }
 
   Node* BinarySearchTree::find(int key, Node* node) const {
-    // Write your code here...
+    if (node== nullptr){
+      return nullptr;
+    }
+    if (node->key == key){
+      return node;
+    }
+    if (key<node->key){
+      return find(key, node->left);
+    }
+    if (key>node->key){
+      return find(key, node->right);
+    }
     return nullptr;
   }
 
