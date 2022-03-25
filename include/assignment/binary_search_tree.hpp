@@ -28,7 +28,6 @@ namespace assignment {
    *             Что представляет из себя линейную функцию от N: СЛОЖНОСТЬ = kN + b = 20 * N + 0.
    */
   struct BinarySearchTree final {
-
     /**
      * Конструктор по умолчанию.
      */
